@@ -2,6 +2,9 @@
 
 [Koa 2'](https://github.com/koajs/koa) application generator. Currently only the web service mode is available.
 
+[![NPM Version][npm-image]][npm-url]
+[![NPM Downloads][downloads-image]][downloads-url]
+
 ## Installation
 
 ```sh
@@ -49,6 +52,8 @@ This generator can also be further configured with the following command line fl
 
 There're some features (updates) which will be included in this generator in the near future:
 
+* [ ] Add appveyor.
+* [ ] Add dockerfile.
 * [ ] Add dynamic .env file.
 * [ ] Add tests for generator.
 * [ ] Add tests for koa2 app.
@@ -63,3 +68,8 @@ There're some features (updates) which will be included in this generator in the
 ## License
 
 [MIT](LICENSE)
+
+[npm-image]: https://img.shields.io/npm/v/create-koa2-app.svg
+[npm-url]: https://npmjs.org/package/create-koa2-app
+[downloads-image]: https://img.shields.io/npm/dm/create-koa2-app.svg
+[downloads-url]: https://npmjs.org/package/create-koa2-app
