@@ -1,0 +1,54 @@
+{
+  "name": "create-koa2-app",
+  "description": "Koa 2 application generator",
+  "version": "1.0.0",
+  "author": "Andrew Avdeev <andrewww.avdeev@gmail.com>",
+  "keywords": [
+    "koa2",
+    "create-app",
+    "framework",
+    "starter-kit",
+    "boilerplate",
+    "web",
+    "rest",
+    "restful",
+    "router",
+    "app",
+    "api",
+    "mongodb",
+    "mysql",
+    "redis",
+    "postgresql"
+  ],
+  "repository": "aandrewww/create-koa2-app",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "2.13.0",
+    "ejs": "2.5.7",
+    "minimatch": "3.0.4",
+    "mkdirp": "0.5.1",
+    "prompts": "^0.1.8",
+    "sorted-object": "2.0.1"
+  },
+  "main": "bin/koa2-app-cli.js",
+  "bin": {
+    "create-koa2-app": "./bin/koa2-app-cli.js"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "eslint": "^4.5.0",
+    "eslint-config-airbnb-base": "^11.3.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-prettier": "^2.2.0",
+    "prettier": "^1.5.3"
+  },
+  "engines": {
+    "node": ">= 7.6"
+  },
+  "files": ["LICENSE", "bin/", "templates/"],
+  "scripts": {
+    "lint": "eslint -c ./.eslintrc .",
+    "test": "echo 'All ok!'",
+    "test-ci": "echo 'All ok!'"
+  }
+}

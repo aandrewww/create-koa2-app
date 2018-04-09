@@ -1,0 +1,43 @@
+require('./helpers/env');
+
+const Koa = require('koa');
+<% Object.keys(modules).sort().forEach(function (variable) { -%>
+const <%- variable %> = require('<%- modules[variable] %>');
+<% }); -%>
+
+const logger = require('./helpers/get-logger')(__filename);
+const router = require('./router');
+
+const requests = require('./middlewares/requests');
+const errors = require('./middlewares/errors');
+<% if (db) { -%>
+const addDBToState = require('./middlewares/add-db-to-state');
+<% } -%>
+<% if (redis) { -%>
+const redis = require('./libs/redis');
+<% } -%>
+
+const app = new Koa();
+app.env = process.env.NODE_ENV;
+<% if (redis) { -%>
+app.context.redis = redis;
+<% } -%>
+
+app.use(requests());
+
+validate(app);
+
+app.use(errors());
+<% uses.forEach(function (use) { -%>
+app.use(<%- use %>);
+<% }); -%>
+
+app.use(router.routes());
+app.use(router.allowedMethods());
+
+async function main() {
+  app.listen(process.env.HTTP_PORT);
+  logger.info('App started successfully on the port %s', process.env.HTTP_PORT);
+}
+
+main();
