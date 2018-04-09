@@ -30,9 +30,9 @@
     "prompts": "^0.1.8",
     "sorted-object": "2.0.1"
   },
-  "main": "bin/koa2-app-cli.js",
+  "main": "bin/run.js",
   "bin": {
-    "create-koa2-app": "./bin/koa2-app-cli.js"
+    "create-koa2-app": "./bin/run.js"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
