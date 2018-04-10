@@ -1,7 +1,7 @@
 {
   "name": "create-koa2-app",
   "description": "Koa 2 application generator",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "Andrew Avdeev <andrewww.avdeev@gmail.com>",
   "keywords": [
     "koa2",

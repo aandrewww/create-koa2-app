@@ -71,6 +71,8 @@ There're some features (updates) which will be included in this generator in the
 * [ ] Add health check for redis.
 * [ ] Add support clasterization.
 * [ ] Add support to start app via pm2.
+* [ ] Add TravisCI.
+* [ ] Improve logger.
 * [ ] Add tunnel to localhost (for development).
 
 ## Author
