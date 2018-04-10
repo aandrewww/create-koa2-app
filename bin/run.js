@@ -104,9 +104,13 @@ function createApplication(name, dir) {
 
   // JavaScript
   const app = utils.loadTemplate('js/app.js');
+  const dotenv = utils.loadTemplate('.env.default');
 
   app.locals.db = program.db;
   app.locals.redis = program.redis;
+
+  dotenv.locals.db = program.db;
+  dotenv.locals.redis = program.redis;
 
   // App modules
   app.locals.modules = Object.create(null);
@@ -176,7 +180,6 @@ function createApplication(name, dir) {
   utils.copyTemplate('js/controllers/version.js', path.join(`${dir}/controllers`, 'version.js'));
   utils.copyTemplateMulti('js/helpers', `${dir}/helpers`, '*.js');
   utils.copyTemplate('js/constants.js', path.join(dir, 'constants.js'));
-  utils.copyTemplate('.env.default', path.join(dir, '.env.default'));
   if (program.git) {
     utils.copyTemplate('.gitignore', path.join(dir, '.gitignore'));
   }
@@ -193,6 +196,7 @@ function createApplication(name, dir) {
 
   // write files
   utils.write(path.join(dir, 'app.js'), app.render());
+  utils.write(path.join(dir, '.env.default'), dotenv.render());
   utils.write(path.join(dir, 'package.json'), `${JSON.stringify(pkg, null, 2)}\n`);
 
   const prompt = utils.launchedFromCmd() ? '>' : '$';

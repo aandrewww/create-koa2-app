@@ -31,6 +31,12 @@ Install dependencies:
 $ npm install
 ```
 
+Copy and change environment variables from default file:
+
+```bash
+$ cp .env.default .env
+```
+
 Start your Koa2 app at `http://localhost:3011/`:
 
 ```bash
@@ -52,9 +58,9 @@ This generator can also be further configured with the following command line fl
 
 There're some features (updates) which will be included in this generator in the near future:
 
+* [x] Add dynamic .env file.
 * [ ] Add appveyor.
 * [ ] Add dockerfile.
-* [ ] Add dynamic .env file.
 * [ ] Add static render.
 * [ ] Add tests for generator.
 * [ ] Add tests for koa2 app.
