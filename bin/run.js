@@ -37,7 +37,7 @@ async function readParams() {
     .name('create-koa2-app')
     .version(VERSION, '    --version')
     .usage('[options] [dir]')
-    .option('-d, --db <database>', 'add database support (mysql, mariadb, mongodb) (defaults to mysql)')
+    .option('-d, --db <database>', 'add database support (mysql, postgresql, mongodb)')
     .option('    --redis', 'add redis support')
     .option('    --git', 'add .gitignore')
     .option('-f, --force', 'force on non-empty directory')

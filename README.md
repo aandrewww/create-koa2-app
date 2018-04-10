@@ -31,7 +31,7 @@ Install dependencies:
 $ npm install
 ```
 
-Start your Koa2 app at `http://localhost:3000/`:
+Start your Koa2 app at `http://localhost:3011/`:
 
 ```bash
 $ npm start
@@ -42,7 +42,7 @@ $ npm start
 This generator can also be further configured with the following command line flags.
 
         --version        output the version number
-    -d, --db <database>  add database support (mysql, mariadb, mongodb)
+    -d, --db <database>  add database support (mysql, postgresql, mongodb)
         --redis          add redis support
         --git            add .gitignore
     -f, --force          force on non-empty directory
@@ -55,6 +55,7 @@ There're some features (updates) which will be included in this generator in the
 * [ ] Add appveyor.
 * [ ] Add dockerfile.
 * [ ] Add dynamic .env file.
+* [ ] Add static render.
 * [ ] Add tests for generator.
 * [ ] Add tests for koa2 app.
 * [ ] Add coverage for tests.
