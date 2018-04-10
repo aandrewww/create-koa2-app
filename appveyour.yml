@@ -1,0 +1,22 @@
+environment:
+  matrix:
+    - nodejs_version: "7.10"
+    - nodejs_version: "8.9"
+    - nodejs_version: "9.2"
+matrix:
+  fast_finish: true
+cache:
+  - node_modules
+install:
+  - ps: Install-Product node $env:nodejs_version
+  - npm config set shrinkwrap false
+  - for /f tokens^=2^ delims^=^" %%m in ('findstr /r /c:"eslint[^ ]" package.json') do call npm rm --save-dev %%m
+  - if exist node_modules npm prune
+  - if exist node_modules npm rebuild
+  - npm install
+build: off
+test_script:
+  - node --version
+  - npm --version
+  - npm run test-ci
+version: "{build}"
