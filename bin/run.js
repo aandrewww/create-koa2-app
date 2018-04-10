@@ -164,6 +164,15 @@ function createApplication(name, dir) {
       utils.mkdir(dir, 'models');
       utils.copyTemplateMulti('js/models', `${dir}/models`, '*.js');
       break;
+    case 'postgresql':
+      app.locals.uses.push('addDBToState()');
+      pkg.dependencies.pg = '~v7.4.1';
+      utils.copyTemplate('js/libs/postgresql.js', path.join(`${dir}/libs`, 'postgresql.js'));
+      utils.copyTemplate('js/middlewares/add-postgresql-to-state.js', path.join(`${dir}/middlewares`, 'add-db-to-state.js'));
+      utils.copyTemplate('js/controllers/health-postgresql.js', path.join(`${dir}/controllers`, 'health.js'));
+      utils.mkdir(dir, 'migrations');
+      utils.copyTemplateMulti('js/migrations', `${dir}/migrations`, '*.js');
+      break;
     default:
       app.locals.db = false;
       utils.copyTemplate('js/controllers/health.js', path.join(`${dir}/controllers`, 'health.js'));

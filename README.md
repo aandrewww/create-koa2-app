@@ -67,18 +67,18 @@ There're some features (updates) which will be included in this generator in the
 
 * [x] Add dynamic .env file.
 * [x] Add appveyor.
+* [x] Add support PostgreSQL.
+* [ ] Improve logger (add transaction id).
 * [ ] Add dockerfile.
 * [ ] Add static render.
 * [ ] Add tests for generator.
 * [ ] Add tests for koa2 app.
 * [ ] Add coverage for tests.
-* [ ] Add support PostgreSQL.
-* [ ] Add support MariaDB.
 * [ ] Add health check for redis.
+* [ ] Add support MariaDB.
 * [ ] Add support clasterization.
 * [ ] Add support to start app via pm2.
 * [ ] Add TravisCI.
-* [ ] Improve logger.
 * [ ] Add tunnel to localhost (for development).
 
 ## Author
