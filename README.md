@@ -14,7 +14,9 @@ $ npm install -g create-koa2-app
 
 ## Quick Start
 
-![](https://cdn.rawgit.com/aandrewww/create-koa2-app/master/media/screencast.svg)
+<p align="center">
+  <img width="600" src="https://cdn.rawgit.com/aandrewww/create-koa2-app/master/media/screencast.svg">
+</p>
 
 Create the app:
 
