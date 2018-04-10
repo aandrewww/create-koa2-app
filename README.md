@@ -1,4 +1,4 @@
-[![Koa2 logo](https://image.ibb.co/dgxkMc/logo.png)](http://koajs.com/)
+[![Koa2 logo](https://cdn.rawgit.com/aandrewww/create-koa2-app/master/media/logo.png)](http://koajs.com/)
 
 [Koa 2'](https://github.com/koajs/koa) application generator. Currently only the web service mode is available.
 
@@ -13,6 +13,8 @@ $ npm install -g create-koa2-app
 ```
 
 ## Quick Start
+
+![](https://cdn.rawgit.com/aandrewww/create-koa2-app/master/media/screencast.svg)
 
 Create the app:
 
