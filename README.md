@@ -4,6 +4,7 @@
 
 [![NPM Version][npm-image]][npm-url]
 [![NPM Downloads][downloads-image]][downloads-url]
+[![Build status][appveyor-image]][appveyor-url]
 
 ## Installation
 
@@ -59,7 +60,7 @@ This generator can also be further configured with the following command line fl
 There're some features (updates) which will be included in this generator in the near future:
 
 * [x] Add dynamic .env file.
-* [ ] Add appveyor.
+* [x] Add appveyor.
 * [ ] Add dockerfile.
 * [ ] Add static render.
 * [ ] Add tests for generator.
@@ -72,6 +73,10 @@ There're some features (updates) which will be included in this generator in the
 * [ ] Add support to start app via pm2.
 * [ ] Add tunnel to localhost (for development).
 
+## Author
+
+* [Andrew Avdeev](https://andrewavdeev.com/)
+
 ## License
 
 [MIT](LICENSE)
@@ -80,3 +85,5 @@ There're some features (updates) which will be included in this generator in the
 [npm-url]: https://npmjs.org/package/create-koa2-app
 [downloads-image]: https://img.shields.io/npm/dm/create-koa2-app.svg
 [downloads-url]: https://npmjs.org/package/create-koa2-app
+[appveyor-image]: https://ci.appveyor.com/api/projects/status/7ka4hp27t43kkpo4?svg=true
+[appveyor-url]: https://ci.appveyor.com/project/aandrewww/create-koa2-app-v09sd
