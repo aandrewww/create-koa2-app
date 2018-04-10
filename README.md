@@ -1,4 +1,6 @@
-[![Koa2 logo](https://cdn.rawgit.com/aandrewww/create-koa2-app/master/media/logo.png)](http://koajs.com/)
+<p align="center">
+  <img width="200" src="https://cdn.rawgit.com/aandrewww/create-koa2-app/master/media/logo.png">
+</p>
 
 [Koa 2'](https://github.com/koajs/koa) application generator. Currently only the web service mode is available.
 
