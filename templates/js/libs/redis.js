@@ -36,7 +36,7 @@ class Redis {
     this.client.quit();
   }
 
-  _remooveEventListeners() {
+  _removeEventListeners() {
     this.client.removeAllListeners('end');
     this.client.removeAllListeners('error');
     this.client.removeAllListeners('ready');
